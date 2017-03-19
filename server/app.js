@@ -12,8 +12,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 //post for object from client
 app.post("/calculator", function(req, res) {
   // console.log(req.body);
-  calculations(req.body);
-  res.sendStatus(200);
+  var result = calculations(req.body);
+  // res.sendStatus(200);
+  res.send(result.toString());
 });
 
 function calculations( inputs ) {
@@ -40,6 +41,7 @@ function calculations( inputs ) {
       return (parseInt(inputs.x) / parseInt(inputs.y));
 
     } //ends switch
+
 }//ends calculations function
 
 //catch-all. if there isn't a match, send to index.html
