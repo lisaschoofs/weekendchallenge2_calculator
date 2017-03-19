@@ -9,7 +9,7 @@ function eventListeners() {
   });
 
   $("#subtractButton").on("click", function() {
-    console.log("substractButton clicked");
+    console.log("subtractButton clicked");
   });
 
   $("#multiplyButton").on("click", function() {
@@ -20,5 +20,8 @@ function eventListeners() {
     console.log("divideButton clicked");
   });
 
+  $("#clearButton").on("click", function() {
+    console.log("clearButton clicked");
+  });
 
 } //end eventListeners
