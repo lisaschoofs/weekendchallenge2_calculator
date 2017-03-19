@@ -35,6 +35,8 @@ function eventListeners() {
   else {
       console.log("clearButton clicked");
       $(".container").empty();
+      valOne.value = '';
+      valTwo.value = '';
   }
 
   });//ends buttons listener
