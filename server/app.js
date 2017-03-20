@@ -11,18 +11,20 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 //post for object from client
 app.post("/calculator", function(req, res) {
-  // console.log(req.body);
+  //
   var result = calculations(req.body);
   // res.sendStatus(200);
   res.send(result.toString());
 });
 
+//function to run mathematical operations on inputs
 function calculations( inputs ) {
 // inputs.type
 // inputs.x
 // inputs.y
 
-// do some sort of magical mathematical calculations here!
+//switch statement to identify math operation choice, run the numbers,
+//and return result.
   switch(inputs.type) {
     case "addButton":
       console.log(parseInt(inputs.x) + parseInt(inputs.y));

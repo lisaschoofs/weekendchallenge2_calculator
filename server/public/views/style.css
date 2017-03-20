@@ -1,0 +1,27 @@
+html {
+  background-color: #fadfad;
+  /*text-align: center;*/
+}
+
+h1 {
+    font: 30px arial, sans-serif;
+    margin: 30px;
+}
+
+#buttons {
+  border-radius: 8px;
+  width: 500px;
+  font: 20px arial, sans-serif;
+  background-color: #00acb0;
+  margin: 30px;
+  text-align: center;
+}
+
+#inputs {
+  margin: 30px;
+
+}
+
+.container {
+  font: 20px arial, sans-serif;
+}
