@@ -1,6 +1,10 @@
-html {
+/*html {
   background-color: #fadfad;
   /*text-align: center;*/
+
+.jumbotron {
+  text-align: center;
+  background-color: #00acb0;
 }
 
 h1 {
@@ -8,20 +12,21 @@ h1 {
     margin: 30px;
 }
 
+.container {
+  font: 20px arial, sans-serif;
+  background-color: salmon;
+}
+
 #buttons {
   border-radius: 8px;
-  width: 500px;
-  font: 20px arial, sans-serif;
+  /*width: 500px;*/
+  /*font: 20px arial, sans-serif;*/
   background-color: #00acb0;
-  margin: 30px;
-  text-align: center;
+  /*margin: 30px;
+  text-align: center;*/
 }
 
 #inputs {
   margin: 30px;
 
-}
-
-.container {
-  font: 20px arial, sans-serif;
 }

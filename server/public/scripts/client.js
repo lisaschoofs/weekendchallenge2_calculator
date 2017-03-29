@@ -16,7 +16,7 @@ function eventListeners() {
     // before operator is selected
     if (($('#valOne').val() === '') || ($('#valTwo').val() === '') ) {
       //tell the user to put in two numbers
-      $('.container').append( '<p> Whoops! Remember to plug in 2 numbers! </p>');
+      $('#results').append( '<p> Whoops! Remember to plug in 2 numbers! </p>');
     }
 
     //if two numbers have been added to the input, go ahead and calculate!
@@ -40,7 +40,7 @@ function eventListeners() {
         success: function( response ) {
           console.log('back from calculator with: ', response);
           //appends final calculation to the DOM
-          $('.container').append( '<p> Your result is: ' + response + '</p>');
+          $('#results').append( '<p> Your result is: ' + response + '</p>');
         } //ends success
       }); //ends ajax post
     }
@@ -49,7 +49,7 @@ function eventListeners() {
     // and resets input fields.
     else {
         console.log("clearButton clicked");
-        $(".container").empty();
+        $("#results").empty();
         valOne.value = '';
         valTwo.value = '';
       }

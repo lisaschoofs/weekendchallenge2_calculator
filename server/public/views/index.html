@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chi-culator</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chi-culator</title>
 
-    <link href="vendors/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="../views/style.css" />
-    <script type="text/javascript" src="../vendors/jquery.js"></script>
-    <script type="text/javascript" src="../scripts/client.js"></script>
-    
-  </head>
-  <body>
+  <link href="vendors/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="../views/style.css" />
+  <script type="text/javascript" src="../vendors/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/client.js"></script>
+
+</head>
+<body>
+  <div class="jumbotron">
     <h1>The Chi-culator!</h1>
-    <div id='inputs'>
-      <input type="text" id="valOne" name="valOne">
-      <input type="text" id="valTwo" name="valTwo">
+  </div>
+  <div class="container">
+    <div class="row" id='inputs'>
+      <div class="col-md-6">
+        <input type="number" id="valOne" name="valOne">
+      </div>
+      <div class="col-md-6">
+        <input type="number" id="valTwo" name="valTwo">
+      </div>
     </div>
+  </div>
+</div>
+  <div class="container">
     <div id='buttons'>
-      <button id="addButton">Add!</button>
-      <button id="subtractButton">Subtract!</button>
-      <button id="multiplyButton">Multiply!</button>
-      <button id="divideButton">Divide!</button>
-      <button id="clearButton">CLEAR!</button>
+      <button type="button" class="btn btn-default" id="addButton">Add!</button>
+      <button type="button" class="btn btn-default"id="subtractButton">Subtract!</button>
+      <button type="button" class="btn btn-default" id="multiplyButton">Multiply!</button>
+      <button type="button" class="btn btn-default"id="divideButton">Divide!</button>
+      <button type="button" class="btn btn-default"id="clearButton">CLEAR!</button>
     </div>
-    <div class="container">
-    </div>
-    <script src="vendors/js/bootstrap.js"></script>
-  </body>
+</div>
+  <div class="container" id="results">
+  </div>
+  <script src="vendors/js/bootstrap.js"></script>
+</body>
 </html>
