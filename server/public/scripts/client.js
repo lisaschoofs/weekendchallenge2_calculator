@@ -16,7 +16,12 @@ function eventListeners() {
     // before operator is selected
     if (($('#valOne').val() === '') || ($('#valTwo').val() === '') ) {
       //tell the user to put in two numbers
-      $('#results').append( '<p> Whoops! Remember to plug in 2 numbers! </p>');
+      // old append: $('#results').append( '<p> Whoops! Remember to plug in 2 numbers! </p>');
+      $('#results').append("<div class='alert alert-danger alert-dismissible'" +
+                          "role='alert'>Whoops! Remember to plug in 2 numbers!" +
+                          "<button type='button' class='close' data-dismiss='alert'" +
+                          " aria-label='Close'><span aria-hidden='true'>&times;" +
+                          "</span></button></div>");
     }
 
     //if two numbers have been added to the input, go ahead and calculate!
